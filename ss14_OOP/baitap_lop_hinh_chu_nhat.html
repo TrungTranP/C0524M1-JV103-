@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas" width="700" height="700"></canvas>
+<script> class Rectangle {
+// làm một method (phương thức) đặc biệt để khởi tạo đối tượng
+    constructor(height, width) {
+// thuộc tính
+        this.h = height;
+        this.w = width;
+
+    }
+    getArea(){
+        return this.h*this.w
+    }
+}
+let hinh1=new Rectangle(10,10)
+console.log("DT hình 1 " + hinh1.getArea())
+</script>
+</body>
+</html>
