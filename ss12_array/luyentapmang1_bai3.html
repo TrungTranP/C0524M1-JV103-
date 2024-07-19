@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt("Tao mot mang co kich thuoc la: ")
+    let A=Array()
+    let b
+    for (let i = 1; i <=a; i++) {
+        b=+prompt("Nhap vao phan tu cua mang: ")
+        A.push(b)
+    }
+    // console.log(A)
+    let max=A[0]
+    let sum=0
+    for (let i = 0; i < A.length; i++) {
+        if (A[i]>max) {
+            max = A[i]
+        }
+        sum=sum+A[i]
+    }
+    alert("Phan tu lon nhat trong mang la " +max)
+    document.write("Gia tri trung binh cac phan tu cua mang la " +sum/A.length)
+    console.log(A)
+</script>
+</body>
+</html>

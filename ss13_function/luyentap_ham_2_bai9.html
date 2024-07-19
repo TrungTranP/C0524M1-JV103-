@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = ["a", "1", "1","2","2","2","2","2"]
+
+    function f(mang, kyTu) {
+        let soLuong = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] === kyTu) {
+                soLuong++;
+            }
+            }
+        if (soLuong == 0) {
+            return -1
+        }
+        return soLuong;
+    }
+console.log(array)
+    alert(f(array, "a"))
+</script>
+</body>
+</html>
