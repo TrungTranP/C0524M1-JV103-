@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function minInteger(a, b, c) {
+        if (a <= b & a <= c) {
+            return a;
+        } else if (b<=c){
+            return b;
+        }
+        return c;
+    }
+    let a=+prompt("Nhap vao so nguyen thu nhat ")
+    let b=+prompt("Nhap vao so nguyen thu hai ")
+    let c=+prompt("Nhap vao so nguyen thu ba ")
+    alert(`So nho nhat la  ${minInteger(a,b,c) }`)
+</script>
+</body>
+</html>
