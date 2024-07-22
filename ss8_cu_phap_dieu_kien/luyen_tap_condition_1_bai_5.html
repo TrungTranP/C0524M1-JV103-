@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemKiemTra = +prompt("Nhap vao diem bai kiem tra");
+    let diemGiuaKi = +prompt("Nhap vao diem bai giua ki");
+    let diemCuoiKi = +prompt("Nhap vao diem bai cuoi ki");
+    let diemTB = diemCuoiKi * 0.5 + diemGiuaKi * 0.3 + diemKiemTra * 0.2;
+    document.write("Diem tong ket " + diemTB)
+    if (diemTB < 5) {
+        alert("Ket qua: hoc luc Kem")
+    } else if (5 <= diemTB && diemTB < 7){
+        alert("Ket qua: Hoc luc Trung binh")
+    } else if (7 <= diemTB && diemTB < 8) {
+        alert("Ket qua: Hoc luc Kha")
+    } else alert("Ket qua: Hoc luc Gioi")
+</script>
+</body>
+</html>
