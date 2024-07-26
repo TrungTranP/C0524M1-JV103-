@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const chuoiTest = "aBCDeF";
+    const mangKiTu = [...chuoiTest];
+    console.log(mangKiTu);
+
+    function kiemTra(chuoi) {
+        let count = 0;
+        for (let i = 0; i < mangKiTu.length; i++) {
+            if (mangKiTu[i] === mangKiTu[i].toUpperCase()) {
+                count += 1;
+            }
+        }
+        if (count === 0) {
+            return "The Strings is not contain upper char";
+        } else {
+            return count;
+        }
+    }
+
+    alert(kiemTra(chuoiTest));
+</script>
+</body>
+</html>
