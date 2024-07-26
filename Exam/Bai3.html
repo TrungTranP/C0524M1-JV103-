@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Tao mot mang so nguyen co kich thuoc la: ");
+    let mang = Array();
+    let num;
+    for (let i = 1; i <= a; i++) {
+        num = +prompt("Nhap vao so nguyen cua mang: ");
+        mang.push(num);
+    }
+    result = mangNguyenTo(mang);
+    document.write("Mang ket qua la " + result.sort((a, b) => a - b))
+
+    function isPrime(num) {
+        if (num < 2) {
+            return false;
+        } else {
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i == 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    function mangNguyenTo(A) {
+        let result = [];
+        for (let i = 0; i < A.length; i++) {
+            if (isPrime(A[i])) {
+                result.push(A[i]);
+            }
+        }
+        return result;
+    }
+</script>
+</body>
+</html>
