@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class CellPhone {
+
+
+        constructor(id, name, brand, price) {
+            this.id = id;
+            this.name = name;
+            this.brand = brand;
+            this.price = price;
+        }
+
+        getId() {
+            return this.id;
+        }
+
+        setId(value) {
+            this.id = value;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(value) {
+            this.name = value;
+
+        }
+
+        getBrand() {
+            return this.brand;
+        }
+
+        setBrand(value) {
+            this.brand = value;
+
+        }
+
+        getPrice() {
+            return this.price;
+        }
+
+        setPrice(value) {
+            this.price = value;
+
+        }
+
+        addNewPhone() {
+            alert(`Da them dien thoai ${this.id} ${this.name} ${this.brand} ${this.price}`);
+        }
+    }
+
+    const phone1 = new CellPhone("1", "iPhone 12", "Apple", "1000$");
+    phone1.addNewPhone();
+    document.write(`${phone1.id} ${phone1.name} ${phone1.brand} ${phone1.price}`);
+</script>
+</body>
+</html>
